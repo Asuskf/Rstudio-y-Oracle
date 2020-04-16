@@ -1,0 +1,5 @@
+library(RJDBC)
+drive <- JDBC("oracle.jdbc.OracleDriver", classPath="/home/david/ojdbc8.jar")
+connect <- dbConnect(drive,"jdbc:oracle:thin:@//172.18.0.2:1521/xe", "sys as sysdba", "mysecurepassword")
+
+
